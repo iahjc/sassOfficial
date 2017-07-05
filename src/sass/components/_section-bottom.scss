@@ -1,0 +1,22 @@
+.section-bottom{
+	.list-tiled{
+		padding-left:0;
+		text-align:left;
+		li{
+			@include span(4);
+			list-style:none;
+			text-align: left;
+		}
+		&>li:nth-child(3n+4){
+			clear:both;
+		}
+
+		h3{
+			color:#808c99;
+			text-transform:uppercase;
+			font-weight:600;
+			letter-spacing:0.5px;
+			font-size:16px;
+		}
+	}
+}
